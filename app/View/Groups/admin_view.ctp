@@ -1,5 +1,11 @@
 <div class="groups view">
+	<br />
 <h2><?php  echo __('Group'); ?></h2>
+<div class="actions">
+		<ul>
+			<li><?php echo $this->Html->link(__('New User'), array('controller' => 'users', 'action' => 'add')); ?> </li>
+		</ul>
+	</div>
 	<dl>
 		<dt><?php echo __('Id'); ?></dt>
 		<dd>
@@ -59,9 +65,5 @@
 	</table>
 <?php endif; ?>
 
-	<div class="actions">
-		<ul>
-			<li><?php echo $this->Html->link(__('New User'), array('controller' => 'users', 'action' => 'add')); ?> </li>
-		</ul>
-	</div>
+	
 </div>

@@ -7,6 +7,40 @@ App::uses('AppController', 'Controller');
  */
 class QuotesController extends AppController {
 
+var $paginate = array(
+        'limit' => 5,
+        'order' => array(
+            'id' => 'desc'
+        )
+    );
+
+
+	public function isAuthorized($user){
+		if($this->action=='add'){
+			if(isset($user['group_id']) && $user['group_id'] > 0)
+				return true;
+
+		}
+
+			if(in_array($this->action, array('edit','delete'))){
+				if(isset($user['group_id']) && $user['group_id'] == 2)
+					return true;
+
+				else{
+					$quote_id = $this->request->params['pass'][0];
+					$user_id = $user['id'];
+					                                
+					if($this->Quote->isOwnedBy($quote_id,$user_id)){
+       					 return true;
+				}
+
+				}
+			}
+
+
+	return parent::isAuthorized($user);
+}
+
 /**
  * index method
  *
@@ -40,11 +74,15 @@ class QuotesController extends AppController {
 	public function add() {
 		if ($this->request->is('post')) {
 			$this->Quote->create();
+			$this->request->data['Quote']['user_id'] = $this->Auth->user('id');
+			//debug($this->request->data);
+			//debug($this->Auth->user('id'));
+			//die();
 			if ($this->Quote->save($this->request->data)) {
-				$this->Session->setFlash(__('The quote has been saved'));
+				$this->Session->setFlash("Quote ajoutée !","notif");
 				$this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The quote could not be saved. Please, try again.'));
+				$this->Session->setFlash("Impossible d'enregistrer la quote, veuillez réessayer","notif",array('type'=>'error'));
 			}
 		}
 		$users = $this->Quote->User->find('list');
@@ -59,15 +97,21 @@ class QuotesController extends AppController {
  * @return void
  */
 	public function edit($id = null) {
+		$user_id = $this->Auth->user('id_user');
+		if(!$user_id){
+			$this->redirect('/');
+			die(); 
+		}
+
 		if (!$this->Quote->exists($id)) {
 			throw new NotFoundException(__('Invalid quote'));
 		}
 		if ($this->request->is('post') || $this->request->is('put')) {
 			if ($this->Quote->save($this->request->data)) {
-				$this->Session->setFlash(__('The quote has been saved'));
+				$this->Session->setFlash("Quote sauvegardée !","notif");
 				$this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The quote could not be saved. Please, try again.'));
+				$this->Session->setFlash("Impossible d'éditer la quote, veuillez réessayer","notif",array('type'=>'error'));
 			}
 		} else {
 			$options = array('conditions' => array('Quote.' . $this->Quote->primaryKey => $id));
@@ -86,16 +130,23 @@ class QuotesController extends AppController {
  * @return void
  */
 	public function delete($id = null) {
+		$user_id = $this->Auth->user('id_user');
+		if(!$user_id){
+			$this->redirect('/');
+
+			die(); 
+		}
+
 		$this->Quote->id = $id;
 		if (!$this->Quote->exists()) {
 			throw new NotFoundException(__('Invalid quote'));
 		}
 		$this->request->onlyAllow('post', 'delete');
 		if ($this->Quote->delete()) {
-			$this->Session->setFlash(__('Quote deleted'));
+			$this->Session->setFlash("Quote supprimée !","notif");
 			$this->redirect(array('action' => 'index'));
 		}
-		$this->Session->setFlash(__('Quote was not deleted'));
+		$this->Session->setFlash("Impossible de supprimer la quote, veuillez réessayer","notif",array('type'=>'error'));
 		$this->redirect(array('action' => 'index'));
 	}
 
@@ -107,6 +158,7 @@ class QuotesController extends AppController {
 	public function admin_index() {
 		$this->Quote->recursive = 0;
 		$this->set('quotes', $this->paginate());
+
 	}
 
 /**
@@ -133,10 +185,10 @@ class QuotesController extends AppController {
 		if ($this->request->is('post')) {
 			$this->Quote->create();
 			if ($this->Quote->save($this->request->data)) {
-				$this->Session->setFlash(__('The quote has been saved'));
+				$this->Session->setFlash("Quote ajoutée !","notif");
 				$this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The quote could not be saved. Please, try again.'));
+				$this->Session->setFlash("Impossible d'enregistrer la quote, veuillez réessayer","notif",array('type'=>'error'));
 			}
 		}
 		$users = $this->Quote->User->find('list');
@@ -156,10 +208,10 @@ class QuotesController extends AppController {
 		}
 		if ($this->request->is('post') || $this->request->is('put')) {
 			if ($this->Quote->save($this->request->data)) {
-				$this->Session->setFlash(__('The quote has been saved'));
+				$this->Session->setFlash("Quote éditée !","notif");
 				$this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The quote could not be saved. Please, try again.'));
+				$this->Session->setFlash("Impossible d'éditer la quote, veuillez réessayer","notif",array('type'=>'error'));
 			}
 		} else {
 			$options = array('conditions' => array('Quote.' . $this->Quote->primaryKey => $id));
@@ -184,10 +236,10 @@ class QuotesController extends AppController {
 		}
 		$this->request->onlyAllow('post', 'delete');
 		if ($this->Quote->delete()) {
-			$this->Session->setFlash(__('Quote deleted'));
+			$this->Session->setFlash("Quote supprimée !","notif");
 			$this->redirect(array('action' => 'index'));
 		}
-		$this->Session->setFlash(__('Quote was not deleted'));
+		$this->Session->setFlash("Impossible de supprimer la quote, veuillez réessayer","notif",array('type'=>'error'));
 		$this->redirect(array('action' => 'index'));
 	}
 }

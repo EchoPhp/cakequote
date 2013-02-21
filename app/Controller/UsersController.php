@@ -12,19 +12,42 @@ public function beforeFilter(){
 	$this->Auth->allow('add');
 }
 
+public function isAuthorized($user){
+
+	if($this->action=='login' || $this->action=='logout' || $this->action=='view' )
+	//if(in_array($this->action, array('login','logout'))) // équivalent
+		return true;
+
+	if($this->action=='edit'){
+		$user_id = $this->request->params['pass'][0];
+		$me_id = $this->Auth->user('id');
+		if($user_id == $me_id)
+			return true;
+		else{
+			$this->Session->setFlash("try harder ;)","notif",array('type'=>'error'));
+		}
+	}
+
+	if($this->action=='delete')
+		return false;
+
+
+	return parent::isAuthorized($user);
+}
+
 public function login() {
     if ($this->request->is('post')) {
         if ($this->Auth->login()) {
             $this->redirect($this->Auth->redirect());
         } else {
-            $this->Session->setFlash('Your username or password was incorrect.');
+            $this->Session->setFlash("Impossible de se loger, veuillez réessayer","notif",array('type'=>'error'));
         }
     }
 }
 
 public function logout() {
  
- 	$this->Session->setFlash('Bye bye');
+ 	$this->Session->setFlash("Bye Bye :'(","notif",array('type'=>'error'));
  	$this->redirect($this->Auth->logout());
 }
 
@@ -34,6 +57,12 @@ public function logout() {
  * @return void
  */
 	public function index() {
+		$user_id = $this->Auth->user('id');
+		if(!$user_id){
+			$this->redirect('/');
+			die(); 
+		}
+
 		$this->User->recursive = 0;
 		$this->set('users', $this->paginate());
 	}
@@ -46,6 +75,12 @@ public function logout() {
  * @return void
  */
 	public function view($id = null) {
+		$user_gp = $this->Auth->user('group_id');
+		if(!$user_gp > 0){
+			$this->redirect('/');
+			die(); 
+		}
+
 		if (!$this->User->exists($id)) {
 			throw new NotFoundException(__('Invalid user'));
 		}
@@ -62,10 +97,11 @@ public function logout() {
 		if ($this->request->is('post')) {
 			$this->User->create();
 			if ($this->User->save($this->request->data)) {
-				$this->Session->setFlash(__('The user has been saved'));
+				$this->Session->setFlash("Vous êtes maintenant inscrit ! :)","notif");
 				$this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The user could not be saved. Please, try again.'));
+				
+				$this->Session->setFlash("Impossible d'enregistrer l'utilisateur, veuillez réessayer","notif",array('type'=>'error'));
 			}
 		}
 		$groups = $this->User->Group->find('list');
@@ -80,15 +116,22 @@ public function logout() {
  * @return void
  */
 	public function edit($id = null) {
+		$user_id = $this->Auth->user('id');
+
+		if(!$user_id){
+			$this->redirect('/');
+			die(); 
+		}
+
 		if (!$this->User->exists($id)) {
 			throw new NotFoundException(__('Invalid user'));
 		}
 		if ($this->request->is('post') || $this->request->is('put')) {
 			if ($this->User->save($this->request->data)) {
-				$this->Session->setFlash(__('The user has been saved'));
+				$this->Session->setFlash("Utilisateur édité","notif");
 				$this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The user could not be saved. Please, try again.'));
+				$this->Session->setFlash("Impossible d'enregistrer, veuillez réessayer","notif",array('type'=>'error'));
 			}
 		} else {
 			$options = array('conditions' => array('User.' . $this->User->primaryKey => $id));
@@ -113,10 +156,10 @@ public function logout() {
 		}
 		$this->request->onlyAllow('post', 'delete');
 		if ($this->User->delete()) {
-			$this->Session->setFlash(__('User deleted'));
+			$this->Session->setFlash("Utilisateur supprimé","notif");
 			$this->redirect(array('action' => 'index'));
 		}
-		$this->Session->setFlash(__('User was not deleted'));
+		$this->Session->setFlash("L'utilisateur n'a pas été supprimé","notif",array('type'=>'error'));
 		$this->redirect(array('action' => 'index'));
 	}
 
@@ -154,10 +197,10 @@ public function logout() {
 		if ($this->request->is('post')) {
 			$this->User->create();
 			if ($this->User->save($this->request->data)) {
-				$this->Session->setFlash(__('The user has been saved'));
+				$this->Session->setFlash("Utilisateur enregistré","notif");
 				$this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The user could not be saved. Please, try again.'));
+				$this->Session->setFlash("Impossible d'enregistrer, veuillez réessayer","notif",array('type'=>'error'));
 			}
 		}
 		$groups = $this->User->Group->find('list');
@@ -177,10 +220,10 @@ public function logout() {
 		}
 		if ($this->request->is('post') || $this->request->is('put')) {
 			if ($this->User->save($this->request->data)) {
-				$this->Session->setFlash(__('The user has been saved'));
+				$this->Session->setFlash("Utilisateur modifié","notif");
 				$this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The user could not be saved. Please, try again.'));
+				$this->Session->setFlash("Impossible d'enregistrer, veuillez réessayer","notif",array('type'=>'error'));
 			}
 		} else {
 			$options = array('conditions' => array('User.' . $this->User->primaryKey => $id));
@@ -205,10 +248,10 @@ public function logout() {
 		}
 		$this->request->onlyAllow('post', 'delete');
 		if ($this->User->delete()) {
-			$this->Session->setFlash(__('User deleted'));
+			$this->Session->setFlash("Utilisateur supprimé","notif");
 			$this->redirect(array('action' => 'index'));
 		}
-		$this->Session->setFlash(__('User was not deleted'));
+		$this->Session->setFlash("l'utilisateur n'a pas été supprimé","notif",array('type'=>'error'));
 		$this->redirect(array('action' => 'index'));
 	}
 }

@@ -1,3 +1,4 @@
+<br />
 <?php
  	echo $this->Session->Flash('auth');
 	echo $this->Form->create('User', array('action' => 'login'));

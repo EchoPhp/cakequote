@@ -163,3 +163,889 @@ Stack Trace:
 #3 C:\wamp\www\cakequote\lib\Cake\Core\App.php(899): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2013-02-20 16:32:01 Error: [MissingActionException] Action UsersController::admin_login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'admin_login',
+)
+Request URL: /cakequote/admin/users/login
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-02-20 16:36:16 Error: [MissingActionException] Action GroupsController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'GroupsController',
+  'action' => 'index',
+)
+Request URL: /cakequote/groups
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(GroupsController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-02-20 16:36:22 Error: [MissingActionException] Action UsersController::admin_login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'admin_login',
+)
+Request URL: /cakequote/admin/users/login
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-02-20 16:36:43 Error: [MissingActionException] Action UsersController::groups() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'groups',
+)
+Request URL: /cakequote/users/groups
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-02-20 16:36:50 Error: [MissingActionException] Action GroupsController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'GroupsController',
+  'action' => 'index',
+)
+Request URL: /cakequote/groups
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(GroupsController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-02-20 16:36:53 Error: [MissingActionException] Action GroupsController::add() could not be found.
+Exception Attributes: array (
+  'controller' => 'GroupsController',
+  'action' => 'add',
+)
+Request URL: /cakequote/groups/add
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(GroupsController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-02-20 16:40:42 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /cakequote/users/delete/7
+Stack Trace:
+#0 C:\wamp\www\cakequote\app\Controller\UsersController.php(114): CakeRequest->onlyAllow('post', 'delete')
+#1 [internal function]: UsersController->delete('7')
+#2 C:\wamp\www\cakequote\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#4 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-02-20 16:40:48 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /cakequote/users/delete/7
+Stack Trace:
+#0 C:\wamp\www\cakequote\app\Controller\UsersController.php(114): CakeRequest->onlyAllow('post', 'delete')
+#1 [internal function]: UsersController->delete('7')
+#2 C:\wamp\www\cakequote\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#4 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-02-20 17:37:28 Error: Fatal Error (4): syntax error, unexpected '(' in [C:\wamp\www\cakequote\app\Controller\QuotesController.php, line 13]
+2013-02-20 17:37:28 Error: [FatalErrorException] syntax error, unexpected '('
+Request URL: /cakequote/
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 13, Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\cak...', 13, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-20 17:37:52 Error: Fatal Error (4): syntax error, unexpected '(' in [C:\wamp\www\cakequote\app\Controller\QuotesController.php, line 17]
+2013-02-20 17:37:52 Error: [FatalErrorException] syntax error, unexpected '('
+Request URL: /cakequote/
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 17)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 17, Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\cak...', 17, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-20 17:39:32 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /cakequote/quotes/delete/8
+Stack Trace:
+#0 C:\wamp\www\cakequote\app\Controller\QuotesController.php(119): CakeRequest->onlyAllow('post', 'delete')
+#1 [internal function]: QuotesController->delete('8')
+#2 C:\wamp\www\cakequote\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(QuotesController), Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#4 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(QuotesController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-02-20 17:59:54 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\wamp\www\cakequote\lib\Cake\Error\ErrorHandler.php, line 176]
+2013-02-20 17:59:54 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /cakequote/users/login
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\wamp\www\cak...', 176)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\wamp\www\cak...', 176, Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\wamp\www\cak...', 176, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-21 16:36:01 Error: [MissingControllerException] Controller class CakeQuoteController could not be found.
+Exception Attributes: array (
+  'class' => 'CakeQuoteController',
+  'plugin' => NULL,
+)
+Request URL: /cakequote/CakeQuote/
+Stack Trace:
+#0 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-02-21 16:36:03 Error: [MissingControllerException] Controller class CakeQuoteController could not be found.
+Exception Attributes: array (
+  'class' => 'CakeQuoteController',
+  'plugin' => NULL,
+)
+Request URL: /cakequote/CakeQuote/
+Stack Trace:
+#0 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-02-21 17:07:58 Error: [MissingControllerException] Controller class AdminController could not be found.
+Exception Attributes: array (
+  'class' => 'AdminController',
+  'plugin' => NULL,
+)
+Request URL: /cakequote/admin
+Stack Trace:
+#0 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-02-21 17:24:52 Error: [MissingActionException] Action GroupsController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'GroupsController',
+  'action' => 'index',
+)
+Request URL: /cakequote/groups
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(GroupsController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-02-21 17:24:58 Error: [MissingActionException] Action UsersController::groups() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'groups',
+)
+Request URL: /cakequote/users/groups
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-02-21 17:25:09 Error: [MissingActionException] Action GroupsController::add() could not be found.
+Exception Attributes: array (
+  'controller' => 'GroupsController',
+  'action' => 'add',
+)
+Request URL: /cakequote/groups/add
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(GroupsController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-02-21 17:25:27 Error: [MissingActionException] Action GroupsController::view() could not be found.
+Exception Attributes: array (
+  'controller' => 'GroupsController',
+  'action' => 'view',
+)
+Request URL: /cakequote/groups/view
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(GroupsController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-02-21 17:31:27 Error: [NotFoundException] Invalid quote
+Request URL: /cakequote/quotes/view
+Stack Trace:
+#0 [internal function]: QuotesController->view()
+#1 C:\wamp\www\cakequote\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(QuotesController), Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#3 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(QuotesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-02-21 17:32:58 Error: [MissingActionException] Action GroupsController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'GroupsController',
+  'action' => 'index',
+)
+Request URL: /cakequote/groups
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(GroupsController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-02-21 17:38:14 Error: [MissingControllerException] Controller class QuoteController could not be found.
+Exception Attributes: array (
+  'class' => 'QuoteController',
+  'plugin' => NULL,
+)
+Request URL: /cakequote/quote/add
+Stack Trace:
+#0 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-02-21 17:38:28 Error: [MissingControllerException] Controller class QuoteController could not be found.
+Exception Attributes: array (
+  'class' => 'QuoteController',
+  'plugin' => NULL,
+)
+Request URL: /cakequote/quote/add
+Stack Trace:
+#0 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-02-21 17:46:13 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /cakequote/quotes/delete/11
+Stack Trace:
+#0 C:\wamp\www\cakequote\app\Controller\QuotesController.php(124): CakeRequest->onlyAllow('post', 'delete')
+#1 [internal function]: QuotesController->delete('11')
+#2 C:\wamp\www\cakequote\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(QuotesController), Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#4 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(QuotesController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-02-21 17:56:55 Error: [MissingActionException] Action UsersController::signup() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'signup',
+)
+Request URL: /cakequote/users/signup
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-02-21 18:02:31 Error: [MissingActionException] Action GroupsController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'GroupsController',
+  'action' => 'index',
+)
+Request URL: /cakequote/groups
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(GroupsController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-02-21 18:03:01 Error: [NotFoundException] Invalid user
+Request URL: /cakequote/users/view
+Stack Trace:
+#0 [internal function]: UsersController->view()
+#1 C:\wamp\www\cakequote\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#3 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-02-21 18:20:08 Error: [MissingControllerException] Controller class AdminController could not be found.
+Exception Attributes: array (
+  'class' => 'AdminController',
+  'plugin' => NULL,
+)
+Request URL: /cakequote/admin/
+Stack Trace:
+#0 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-02-21 18:24:01 Error: [MissingActionException] Action UsersController::admin_login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'admin_login',
+)
+Request URL: /cakequote/admin/users/login
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-02-21 18:24:07 Error: [MissingActionException] Action UsersController::admin_login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'admin_login',
+)
+Request URL: /cakequote/admin/users/login
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-02-21 18:24:36 Error: [MissingActionException] Action UsersController::admin_login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'admin_login',
+)
+Request URL: /cakequote/admin/users/login
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-02-21 18:24:51 Error: [MissingActionException] Action UsersController::admin_login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'admin_login',
+)
+Request URL: /cakequote/admin/users/login
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-02-21 18:28:31 Error: [MissingControllerException] Controller class AdminController could not be found.
+Exception Attributes: array (
+  'class' => 'AdminController',
+  'plugin' => NULL,
+)
+Request URL: /cakequote/admin
+Stack Trace:
+#0 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-02-21 18:28:54 Error: [MissingControllerException] Controller class AdminController could not be found.
+Exception Attributes: array (
+  'class' => 'AdminController',
+  'plugin' => NULL,
+)
+Request URL: /cakequote/admin
+Stack Trace:
+#0 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-02-21 18:28:55 Error: [PrivateActionException] Private Action UsersController::admin_index() is not directly accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'admin_index',
+)
+Request URL: /cakequote/users/admin_index
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-02-21 18:29:06 Error: [MissingControllerException] Controller class AdminController could not be found.
+Exception Attributes: array (
+  'class' => 'AdminController',
+  'plugin' => NULL,
+)
+Request URL: /cakequote/admin/
+Stack Trace:
+#0 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-02-21 18:29:24 Error: [MissingControllerException] Controller class AdminIndexController could not be found.
+Exception Attributes: array (
+  'class' => 'AdminIndexController',
+  'plugin' => NULL,
+)
+Request URL: /cakequote/admin/admin_index
+Stack Trace:
+#0 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-02-21 18:29:30 Error: [MissingControllerException] Controller class AdminIndexController could not be found.
+Exception Attributes: array (
+  'class' => 'AdminIndexController',
+  'plugin' => NULL,
+)
+Request URL: /cakequote/admin/admin_index
+Stack Trace:
+#0 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-02-21 18:30:29 Error: [MissingControllerException] Controller class QuotsController could not be found.
+Exception Attributes: array (
+  'class' => 'QuotsController',
+  'plugin' => NULL,
+)
+Request URL: /cakequote/admin/quots
+Stack Trace:
+#0 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-02-21 18:30:58 Error: [MissingControllerException] Controller class AdminController could not be found.
+Exception Attributes: array (
+  'class' => 'AdminController',
+  'plugin' => NULL,
+)
+Request URL: /cakequote/admin/admin/quotes
+Stack Trace:
+#0 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-02-21 18:31:09 Error: [MissingControllerException] Controller class AdminController could not be found.
+Exception Attributes: array (
+  'class' => 'AdminController',
+  'plugin' => NULL,
+)
+Request URL: /cakequote/admin/admin/quotes
+Stack Trace:
+#0 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-02-21 18:31:17 Error: [MissingActionException] Action UsersController::admin_logout() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'admin_logout',
+)
+Request URL: /cakequote/admin/users/logout
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-02-21 18:31:26 Error: [MissingActionException] Action UsersController::admin_logout() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'admin_logout',
+)
+Request URL: /cakequote/admin/users/logout
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-02-21 18:31:27 Error: [MissingControllerException] Controller class LogoutController could not be found.
+Exception Attributes: array (
+  'class' => 'LogoutController',
+  'plugin' => NULL,
+)
+Request URL: /cakequote/logout
+Stack Trace:
+#0 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-02-21 18:31:33 Error: [MissingControllerException] Controller class LogoutController could not be found.
+Exception Attributes: array (
+  'class' => 'LogoutController',
+  'plugin' => NULL,
+)
+Request URL: /cakequote/logout
+Stack Trace:
+#0 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-02-21 18:55:15 Error: [MissingControllerException] Controller class AddController could not be found.
+Exception Attributes: array (
+  'class' => 'AddController',
+  'plugin' => NULL,
+)
+Request URL: /cakequote/admin/add
+Stack Trace:
+#0 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-02-21 19:35:41 Error: [MissingControllerException] Controller class IndexController could not be found.
+Exception Attributes: array (
+  'class' => 'IndexController',
+  'plugin' => NULL,
+)
+Request URL: /cakequote/admin/index
+Stack Trace:
+#0 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-02-21 19:40:16 Error: [MissingControllerException] Controller class AdminController could not be found.
+Exception Attributes: array (
+  'class' => 'AdminController',
+  'plugin' => NULL,
+)
+Request URL: /cakequote/admin
+Stack Trace:
+#0 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-02-21 19:40:25 Error: [MissingControllerException] Controller class AdminController could not be found.
+Exception Attributes: array (
+  'class' => 'AdminController',
+  'plugin' => NULL,
+)
+Request URL: /cakequote/admin
+Stack Trace:
+#0 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-02-21 19:48:38 Error: Fatal Error (4): syntax error, unexpected '<' in [C:\wamp\www\cakequote\app\Controller\UsersController.php, line 79]
+2013-02-21 19:48:38 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /cakequote/users/view/1
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 79)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 79, Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\cak...', 79, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-21 19:50:35 Error: Fatal Error (1): Call to undefined function isAuthorized() in [C:\wamp\www\cakequote\app\Controller\UsersController.php, line 78]
+2013-02-21 19:50:35 Error: [FatalErrorException] Call to undefined function isAuthorized()
+Request URL: /cakequote/users/view/1
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\wamp\www\cak...', 78)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\wamp\www\cak...', 78, Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\wamp\www\cak...', 78, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-21 19:51:28 Error: Fatal Error (1): Call to undefined function isAuthorized() in [C:\wamp\www\cakequote\app\Controller\UsersController.php, line 78]
+2013-02-21 19:51:28 Error: [FatalErrorException] Call to undefined function isAuthorized()
+Request URL: /cakequote/users/view/1
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\wamp\www\cak...', 78)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\wamp\www\cak...', 78, Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\wamp\www\cak...', 78, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-21 19:51:38 Error: Fatal Error (4): syntax error, unexpected T_IF, expecting T_FUNCTION in [C:\wamp\www\cakequote\app\Controller\UsersController.php, line 79]
+2013-02-21 19:51:38 Error: [FatalErrorException] syntax error, unexpected T_IF, expecting T_FUNCTION
+Request URL: /cakequote/users/view/1
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 79)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 79, Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\cak...', 79, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-21 19:52:05 Error: Fatal Error (1): Call to undefined function isAuthorized() in [C:\wamp\www\cakequote\app\Controller\UsersController.php, line 78]
+2013-02-21 19:52:05 Error: [FatalErrorException] Call to undefined function isAuthorized()
+Request URL: /cakequote/users/view/1
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\wamp\www\cak...', 78)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\wamp\www\cak...', 78, Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\wamp\www\cak...', 78, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-21 20:08:34 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in order clause is ambiguous
+Request URL: /cakequote/
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\cakequote\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('SELECT `Quote`....', Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('SELECT `Quote`....', Array, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Model\Datasource\DboSource.php(1080): DboSource->fetchAll('SELECT `Quote`....', false)
+#4 C:\wamp\www\cakequote\lib\Cake\Model\Model.php(2674): DboSource->read(Object(Quote), Array)
+#5 C:\wamp\www\cakequote\lib\Cake\Controller\Component\PaginatorComponent.php(195): Model->find('all', Array)
+#6 C:\wamp\www\cakequote\lib\Cake\Controller\Controller.php(1073): PaginatorComponent->paginate(NULL, Array, Array)
+#7 C:\wamp\www\cakequote\app\Controller\QuotesController.php(44): Controller->paginate()
+#8 [internal function]: QuotesController->index()
+#9 C:\wamp\www\cakequote\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(QuotesController), Array)
+#10 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#11 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(QuotesController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2013-02-21 20:08:40 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in order clause is ambiguous
+Request URL: /cakequote/
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\cakequote\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('SELECT `Quote`....', Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('SELECT `Quote`....', Array, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Model\Datasource\DboSource.php(1080): DboSource->fetchAll('SELECT `Quote`....', false)
+#4 C:\wamp\www\cakequote\lib\Cake\Model\Model.php(2674): DboSource->read(Object(Quote), Array)
+#5 C:\wamp\www\cakequote\lib\Cake\Controller\Component\PaginatorComponent.php(195): Model->find('all', Array)
+#6 C:\wamp\www\cakequote\lib\Cake\Controller\Controller.php(1073): PaginatorComponent->paginate(NULL, Array, Array)
+#7 C:\wamp\www\cakequote\app\Controller\QuotesController.php(44): Controller->paginate()
+#8 [internal function]: QuotesController->index()
+#9 C:\wamp\www\cakequote\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(QuotesController), Array)
+#10 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#11 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(QuotesController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2013-02-21 20:15:23 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'quotes.id' in 'order clause'
+Request URL: /cakequote/
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\cakequote\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('SELECT `Quote`....', Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('SELECT `Quote`....', Array, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Model\Datasource\DboSource.php(1080): DboSource->fetchAll('SELECT `Quote`....', false)
+#4 C:\wamp\www\cakequote\lib\Cake\Model\Model.php(2674): DboSource->read(Object(Quote), Array)
+#5 C:\wamp\www\cakequote\app\Controller\QuotesController.php(44): Model->find('all', Array)
+#6 [internal function]: QuotesController->index()
+#7 C:\wamp\www\cakequote\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(QuotesController), Array)
+#8 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(QuotesController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-02-21 20:18:58 Error: [MissingHelperException] Helper class AuthHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AuthHelper',
+  'plugin' => false,
+)
+Request URL: /cakequote/
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\View\HelperCollection.php(62): HelperCollection->load('Auth')
+#1 C:\wamp\www\cakequote\lib\Cake\View\View.php(835): HelperCollection->__isset('Auth')
+#2 C:\wamp\www\cakequote\app\View\Layouts\default.ctp(7): View->__get('Auth')
+#3 C:\wamp\www\cakequote\lib\Cake\View\View.php(947): include('C:\wamp\www\cak...')
+#4 C:\wamp\www\cakequote\lib\Cake\View\View.php(909): View->_evaluate('C:\wamp\www\cak...', Array)
+#5 C:\wamp\www\cakequote\lib\Cake\View\View.php(534): View->_render('C:\wamp\www\cak...')
+#6 C:\wamp\www\cakequote\lib\Cake\View\View.php(478): View->renderLayout('', 'default')
+#7 C:\wamp\www\cakequote\lib\Cake\Controller\Controller.php(947): View->render(NULL, NULL)
+#8 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(193): Controller->render()
+#9 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(QuotesController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-02-21 20:19:06 Error: [MissingHelperException] Helper class AuthHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AuthHelper',
+  'plugin' => false,
+)
+Request URL: /cakequote/
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\View\HelperCollection.php(62): HelperCollection->load('Auth')
+#1 C:\wamp\www\cakequote\lib\Cake\View\View.php(835): HelperCollection->__isset('Auth')
+#2 C:\wamp\www\cakequote\app\View\Layouts\default.ctp(7): View->__get('Auth')
+#3 C:\wamp\www\cakequote\lib\Cake\View\View.php(947): include('C:\wamp\www\cak...')
+#4 C:\wamp\www\cakequote\lib\Cake\View\View.php(909): View->_evaluate('C:\wamp\www\cak...', Array)
+#5 C:\wamp\www\cakequote\lib\Cake\View\View.php(534): View->_render('C:\wamp\www\cak...')
+#6 C:\wamp\www\cakequote\lib\Cake\View\View.php(478): View->renderLayout('', 'default')
+#7 C:\wamp\www\cakequote\lib\Cake\Controller\Controller.php(947): View->render(NULL, NULL)
+#8 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(193): Controller->render()
+#9 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(QuotesController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-02-21 20:19:07 Error: [MissingHelperException] Helper class AuthHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AuthHelper',
+  'plugin' => false,
+)
+Request URL: /cakequote/
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\View\HelperCollection.php(62): HelperCollection->load('Auth')
+#1 C:\wamp\www\cakequote\lib\Cake\View\View.php(835): HelperCollection->__isset('Auth')
+#2 C:\wamp\www\cakequote\app\View\Layouts\default.ctp(7): View->__get('Auth')
+#3 C:\wamp\www\cakequote\lib\Cake\View\View.php(947): include('C:\wamp\www\cak...')
+#4 C:\wamp\www\cakequote\lib\Cake\View\View.php(909): View->_evaluate('C:\wamp\www\cak...', Array)
+#5 C:\wamp\www\cakequote\lib\Cake\View\View.php(534): View->_render('C:\wamp\www\cak...')
+#6 C:\wamp\www\cakequote\lib\Cake\View\View.php(478): View->renderLayout('', 'default')
+#7 C:\wamp\www\cakequote\lib\Cake\Controller\Controller.php(947): View->render(NULL, NULL)
+#8 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(193): Controller->render()
+#9 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(QuotesController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-02-21 20:19:18 Error: [MissingHelperException] Helper class AuthHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AuthHelper',
+  'plugin' => false,
+)
+Request URL: /cakequote/
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\View\HelperCollection.php(62): HelperCollection->load('Auth')
+#1 C:\wamp\www\cakequote\lib\Cake\View\View.php(835): HelperCollection->__isset('Auth')
+#2 C:\wamp\www\cakequote\app\View\Layouts\default.ctp(6): View->__get('Auth')
+#3 C:\wamp\www\cakequote\lib\Cake\View\View.php(947): include('C:\wamp\www\cak...')
+#4 C:\wamp\www\cakequote\lib\Cake\View\View.php(909): View->_evaluate('C:\wamp\www\cak...', Array)
+#5 C:\wamp\www\cakequote\lib\Cake\View\View.php(534): View->_render('C:\wamp\www\cak...')
+#6 C:\wamp\www\cakequote\lib\Cake\View\View.php(478): View->renderLayout('', 'default')
+#7 C:\wamp\www\cakequote\lib\Cake\Controller\Controller.php(947): View->render(NULL, NULL)
+#8 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(193): Controller->render()
+#9 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(QuotesController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-02-21 20:20:13 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\wamp\www\cakequote\lib\Cake\Utility\Debugger.php, line 495]
+2013-02-21 20:20:13 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /cakequote/
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\wamp\www\cak...', 495)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\wamp\www\cak...', 495, Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\wamp\www\cak...', 495, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-21 20:20:56 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\wamp\www\cakequote\lib\Cake\Utility\Debugger.php, line 542]
+2013-02-21 20:20:56 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /cakequote/
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\wamp\www\cak...', 542)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\wamp\www\cak...', 542, Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\wamp\www\cak...', 542, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-21 20:20:57 Error: [MissingHelperException] Helper class AuthHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AuthHelper',
+  'plugin' => false,
+)
+Request URL: /cakequote/
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\View\HelperCollection.php(62): HelperCollection->load('Auth')
+#1 C:\wamp\www\cakequote\lib\Cake\View\View.php(835): HelperCollection->__isset('Auth')
+#2 C:\wamp\www\cakequote\app\View\Layouts\default.ctp(22): View->__get('Auth')
+#3 C:\wamp\www\cakequote\lib\Cake\View\View.php(947): include('C:\wamp\www\cak...')
+#4 C:\wamp\www\cakequote\lib\Cake\View\View.php(909): View->_evaluate('C:\wamp\www\cak...', Array)
+#5 C:\wamp\www\cakequote\lib\Cake\View\View.php(534): View->_render('C:\wamp\www\cak...')
+#6 C:\wamp\www\cakequote\lib\Cake\View\View.php(478): View->renderLayout('', 'default')
+#7 C:\wamp\www\cakequote\lib\Cake\Controller\Controller.php(947): View->render(NULL, NULL)
+#8 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(193): Controller->render()
+#9 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(QuotesController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-02-21 20:20:57 Error: [MissingHelperException] Helper class AuthHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AuthHelper',
+  'plugin' => false,
+)
+Request URL: /cakequote/
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\View\HelperCollection.php(62): HelperCollection->load('Auth')
+#1 C:\wamp\www\cakequote\lib\Cake\View\View.php(835): HelperCollection->__isset('Auth')
+#2 C:\wamp\www\cakequote\app\View\Layouts\default.ctp(22): View->__get('Auth')
+#3 C:\wamp\www\cakequote\lib\Cake\View\View.php(947): include('C:\wamp\www\cak...')
+#4 C:\wamp\www\cakequote\lib\Cake\View\View.php(909): View->_evaluate('C:\wamp\www\cak...', Array)
+#5 C:\wamp\www\cakequote\lib\Cake\View\View.php(534): View->_render('C:\wamp\www\cak...')
+#6 C:\wamp\www\cakequote\lib\Cake\View\View.php(478): View->renderLayout('', 'default')
+#7 C:\wamp\www\cakequote\lib\Cake\Controller\Controller.php(947): View->render(NULL, NULL)
+#8 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(193): Controller->render()
+#9 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(QuotesController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-02-21 20:21:29 Error: [MissingHelperException] Helper class AuthHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AuthHelper',
+  'plugin' => false,
+)
+Request URL: /cakequote/
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\View\HelperCollection.php(62): HelperCollection->load('Auth')
+#1 C:\wamp\www\cakequote\lib\Cake\View\View.php(835): HelperCollection->__isset('Auth')
+#2 C:\wamp\www\cakequote\app\View\Layouts\default.ctp(22): View->__get('Auth')
+#3 C:\wamp\www\cakequote\lib\Cake\View\View.php(947): include('C:\wamp\www\cak...')
+#4 C:\wamp\www\cakequote\lib\Cake\View\View.php(909): View->_evaluate('C:\wamp\www\cak...', Array)
+#5 C:\wamp\www\cakequote\lib\Cake\View\View.php(534): View->_render('C:\wamp\www\cak...')
+#6 C:\wamp\www\cakequote\lib\Cake\View\View.php(478): View->renderLayout('', 'default')
+#7 C:\wamp\www\cakequote\lib\Cake\Controller\Controller.php(947): View->render(NULL, NULL)
+#8 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(193): Controller->render()
+#9 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(QuotesController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-02-21 20:21:53 Error: Fatal Error (4): syntax error, unexpected $end in [C:\wamp\www\cakequote\app\View\Layouts\default.ctp, line 56]
+2013-02-21 20:21:53 Error: [FatalErrorException] syntax error, unexpected $end
+Request URL: /cakequote/
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 56)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 56, Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\cak...', 56, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-21 20:24:54 Error: Fatal Error (64): Can't use function return value in write context in [C:\wamp\www\cakequote\app\View\Layouts\default.ctp, line 20]
+2013-02-21 20:24:54 Error: [FatalErrorException] Can't use function return value in write context
+Request URL: /cakequote/
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(64, 'Can't use funct...', 'C:\wamp\www\cak...', 20)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use funct...', 'C:\wamp\www\cak...', 20, Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 64, 'Can't use funct...', 'C:\wamp\www\cak...', 20, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-21 20:25:18 Error: Fatal Error (64): Can't use function return value in write context in [C:\wamp\www\cakequote\app\View\Layouts\default.ctp, line 20]
+2013-02-21 20:25:18 Error: [FatalErrorException] Can't use function return value in write context
+Request URL: /cakequote/
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(64, 'Can't use funct...', 'C:\wamp\www\cak...', 20)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use funct...', 'C:\wamp\www\cak...', 20, Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 64, 'Can't use funct...', 'C:\wamp\www\cak...', 20, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-21 20:25:39 Error: Fatal Error (64): Can't use function return value in write context in [C:\wamp\www\cakequote\app\View\Layouts\default.ctp, line 20]
+2013-02-21 20:25:39 Error: [FatalErrorException] Can't use function return value in write context
+Request URL: /cakequote/
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(64, 'Can't use funct...', 'C:\wamp\www\cak...', 20)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use funct...', 'C:\wamp\www\cak...', 20, Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 64, 'Can't use funct...', 'C:\wamp\www\cak...', 20, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-21 20:34:13 Error: Fatal Error (4): syntax error, unexpected '?' in [C:\wamp\www\cakequote\app\View\Users\index.ctp, line 17]
+2013-02-21 20:34:13 Error: [FatalErrorException] syntax error, unexpected '?'
+Request URL: /cakequote/users
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 17)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 17, Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\cak...', 17, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-21 20:42:16 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\wamp\www\cakequote\app\Controller\QuotesController.php, line 94]
+2013-02-21 20:42:16 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /cakequote/quotes/edit/1
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 94)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 94, Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\cak...', 94, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-21 20:49:04 Error: Fatal Error (4): syntax error, unexpected T_ENDFOREACH in [C:\wamp\www\cakequote\app\View\Users\view.ctp, line 75]
+2013-02-21 20:49:04 Error: [FatalErrorException] syntax error, unexpected T_ENDFOREACH
+Request URL: /cakequote/users/view/1
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 75)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 75, Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\cak...', 75, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-21 20:51:47 Error: [MissingActionException] Action GroupsController::add() could not be found.
+Exception Attributes: array (
+  'controller' => 'GroupsController',
+  'action' => 'add',
+)
+Request URL: /cakequote/groups/add
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(GroupsController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-02-21 20:53:04 Error: [MissingActionException] Action GroupsController::add() could not be found.
+Exception Attributes: array (
+  'controller' => 'GroupsController',
+  'action' => 'add',
+)
+Request URL: /cakequote/groups/add
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(GroupsController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-02-21 21:01:35 Error: Fatal Error (4): syntax error, unexpected '<' in [C:\wamp\www\cakequote\app\View\Quotes\index.ctp, line 30]
+2013-02-21 21:01:35 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /cakequote/
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 30)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 30, Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\cak...', 30, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-21 21:01:46 Error: Fatal Error (4): syntax error, unexpected '<' in [C:\wamp\www\cakequote\app\View\Quotes\index.ctp, line 30]
+2013-02-21 21:01:46 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /cakequote/
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 30)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 30, Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\cak...', 30, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-21 21:03:23 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'quotes.id' in 'order clause'
+Request URL: /cakequote/
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\cakequote\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('SELECT `Quote`....', Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('SELECT `Quote`....', Array, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Model\Datasource\DboSource.php(1080): DboSource->fetchAll('SELECT `Quote`....', false)
+#4 C:\wamp\www\cakequote\lib\Cake\Model\Model.php(2674): DboSource->read(Object(Quote), Array)
+#5 C:\wamp\www\cakequote\lib\Cake\Controller\Component\PaginatorComponent.php(195): Model->find('all', Array)
+#6 C:\wamp\www\cakequote\lib\Cake\Controller\Controller.php(1073): PaginatorComponent->paginate(NULL, Array, Array)
+#7 C:\wamp\www\cakequote\app\Controller\QuotesController.php(51): Controller->paginate()
+#8 [internal function]: QuotesController->index()
+#9 C:\wamp\www\cakequote\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(QuotesController), Array)
+#10 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#11 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(QuotesController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2013-02-21 21:04:24 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Post.id' in 'order clause'
+Request URL: /cakequote/
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\cakequote\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('SELECT `Quote`....', Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('SELECT `Quote`....', Array, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Model\Datasource\DboSource.php(1080): DboSource->fetchAll('SELECT `Quote`....', false)
+#4 C:\wamp\www\cakequote\lib\Cake\Model\Model.php(2674): DboSource->read(Object(Quote), Array)
+#5 C:\wamp\www\cakequote\lib\Cake\Controller\Component\PaginatorComponent.php(195): Model->find('all', Array)
+#6 C:\wamp\www\cakequote\lib\Cake\Controller\Controller.php(1073): PaginatorComponent->paginate(NULL, Array, Array)
+#7 C:\wamp\www\cakequote\app\Controller\QuotesController.php(51): Controller->paginate()
+#8 [internal function]: QuotesController->index()
+#9 C:\wamp\www\cakequote\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(QuotesController), Array)
+#10 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#11 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(QuotesController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
