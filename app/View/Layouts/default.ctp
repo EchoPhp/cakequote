@@ -34,6 +34,7 @@
                         <li><?php echo $this->Html->link(__('Se connecter'), array('controller' => 'users', 'action' => 'login')); ?></li>
                         <li><?php echo $this->Html->link("S'inscrire",array('action'=>'add','controller'=>'users')); ?></li>
                 <?php endif; ?>
+                        <li><?php echo $this->Html->link(__('Quote au hasard'), array('controller' => 'quotes', 'action' => 'random')); ?></li>
 
               </ul>
 

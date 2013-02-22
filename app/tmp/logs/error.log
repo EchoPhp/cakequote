@@ -1049,3 +1049,224 @@ Stack Trace:
 #11 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(QuotesController), Object(CakeRequest), Object(CakeResponse))
 #12 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #13 {main}
+2013-02-22 11:18:30 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE, expecting T_FUNCTION in [C:\wamp\www\cakequote\app\Controller\QuotesController.php, line 17]
+2013-02-22 11:18:30 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE, expecting T_FUNCTION
+Request URL: /cakequote/
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 17)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 17, Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\cak...', 17, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-22 11:20:24 Error: Fatal Error (4): syntax error, unexpected ')', expecting ',' or ';' in [C:\wamp\www\cakequote\app\Controller\QuotesController.php, line 14]
+2013-02-22 11:20:24 Error: [FatalErrorException] syntax error, unexpected ')', expecting ',' or ';'
+Request URL: /cakequote/
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 14)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 14, Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\cak...', 14, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-22 11:23:02 Error: [MissingControllerException] Controller class RandomquotesController could not be found.
+Exception Attributes: array (
+  'class' => 'RandomquotesController',
+  'plugin' => NULL,
+)
+Request URL: /cakequote/randomquotes
+Stack Trace:
+#0 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-02-22 11:23:09 Error: [MissingControllerException] Controller class QController could not be found.
+Exception Attributes: array (
+  'class' => 'QController',
+  'plugin' => NULL,
+)
+Request URL: /cakequote/Q
+Stack Trace:
+#0 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-02-22 11:23:26 Error: [MissingControllerException] Controller class RandomQuotesController could not be found.
+Exception Attributes: array (
+  'class' => 'RandomQuotesController',
+  'plugin' => NULL,
+)
+Request URL: /cakequote/RandomQuotes
+Stack Trace:
+#0 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-02-22 11:23:42 Error: [MissingTableException] Table random_quotes for model RandomQuote was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'random_quotes',
+  'class' => 'RandomQuote',
+  'ds' => 'default',
+)
+Request URL: /cakequote/RandomQuotes
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Model\Model.php(3217): Model->setSource('random_quotes')
+#1 C:\wamp\www\cakequote\lib\Cake\Model\Model.php(2674): Model->getDataSource()
+#2 C:\wamp\www\cakequote\lib\Cake\Controller\Component\PaginatorComponent.php(195): Model->find('all', Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Controller\Controller.php(1073): PaginatorComponent->paginate(NULL, Array, Array)
+#4 C:\wamp\www\cakequote\app\Controller\RandomQuotesController.php(51): Controller->paginate()
+#5 [internal function]: RandomQuotesController->index()
+#6 C:\wamp\www\cakequote\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(RandomQuotesController), Array)
+#7 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#8 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(RandomQuotesController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-02-22 11:24:23 Error: [MissingTableException] Table random_quotes for model RandomQuote was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'random_quotes',
+  'class' => 'RandomQuote',
+  'ds' => 'default',
+)
+Request URL: /cakequote/RandomQuotes
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Model\Model.php(3217): Model->setSource('random_quotes')
+#1 C:\wamp\www\cakequote\lib\Cake\Model\Model.php(2674): Model->getDataSource()
+#2 C:\wamp\www\cakequote\lib\Cake\Controller\Component\PaginatorComponent.php(195): Model->find('all', Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Controller\Controller.php(1073): PaginatorComponent->paginate(NULL, Array, Array)
+#4 C:\wamp\www\cakequote\app\Controller\RandomQuotesController.php(51): Controller->paginate()
+#5 [internal function]: RandomQuotesController->index()
+#6 C:\wamp\www\cakequote\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(RandomQuotesController), Array)
+#7 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#8 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(RandomQuotesController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-02-22 11:25:27 Error: [MissingTableException] Table random_quotes for model RandomQuote was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'random_quotes',
+  'class' => 'RandomQuote',
+  'ds' => 'default',
+)
+Request URL: /cakequote/RandomQuotes
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Model\Model.php(3217): Model->setSource('random_quotes')
+#1 C:\wamp\www\cakequote\lib\Cake\Model\Model.php(2674): Model->getDataSource()
+#2 C:\wamp\www\cakequote\lib\Cake\Controller\Component\PaginatorComponent.php(195): Model->find('all', Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Controller\Controller.php(1073): PaginatorComponent->paginate(NULL, Array, Array)
+#4 C:\wamp\www\cakequote\app\Controller\RandomQuotesController.php(51): Controller->paginate()
+#5 [internal function]: RandomQuotesController->index()
+#6 C:\wamp\www\cakequote\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(RandomQuotesController), Array)
+#7 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#8 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(RandomQuotesController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-02-22 11:26:01 Error: [MissingTableException] Table random_quotes for model RandomQuote was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'random_quotes',
+  'class' => 'RandomQuote',
+  'ds' => 'default',
+)
+Request URL: /cakequote/RandomQuotes
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Model\Model.php(3217): Model->setSource('random_quotes')
+#1 C:\wamp\www\cakequote\lib\Cake\Model\Model.php(2674): Model->getDataSource()
+#2 C:\wamp\www\cakequote\lib\Cake\Controller\Component\PaginatorComponent.php(195): Model->find('all', Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Controller\Controller.php(1073): PaginatorComponent->paginate(NULL, Array, Array)
+#4 C:\wamp\www\cakequote\app\Controller\RandomQuotesController.php(51): Controller->paginate()
+#5 [internal function]: RandomQuotesController->index()
+#6 C:\wamp\www\cakequote\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(RandomQuotesController), Array)
+#7 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#8 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(RandomQuotesController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-02-22 11:27:30 Error: [MissingTableException] Table random_quotes for model RandomQuote was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'random_quotes',
+  'class' => 'RandomQuote',
+  'ds' => 'default',
+)
+Request URL: /cakequote/RandomQuotes
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Model\Model.php(3217): Model->setSource('random_quotes')
+#1 C:\wamp\www\cakequote\lib\Cake\Model\Model.php(2674): Model->getDataSource()
+#2 C:\wamp\www\cakequote\lib\Cake\Controller\Component\PaginatorComponent.php(195): Model->find('all', Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Controller\Controller.php(1073): PaginatorComponent->paginate(NULL, Array, Array)
+#4 C:\wamp\www\cakequote\app\Controller\RandomQuotesController.php(51): Controller->paginate()
+#5 [internal function]: RandomQuotesController->index()
+#6 C:\wamp\www\cakequote\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(RandomQuotesController), Array)
+#7 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#8 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(RandomQuotesController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-02-22 11:27:33 Error: Fatal Error (4): syntax error, unexpected T_VAR in [C:\wamp\www\cakequote\app\Controller\QuotesController.php, line 57]
+2013-02-22 11:27:33 Error: [FatalErrorException] syntax error, unexpected T_VAR
+Request URL: /cakequote/
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 57)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 57, Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\cak...', 57, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-22 11:28:08 Error: Fatal Error (4): syntax error, unexpected T_VAR in [C:\wamp\www\cakequote\app\Controller\QuotesController.php, line 57]
+2013-02-22 11:28:08 Error: [FatalErrorException] syntax error, unexpected T_VAR
+Request URL: /cakequote/
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 57)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 57, Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\cak...', 57, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-22 11:30:54 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE in [C:\wamp\www\cakequote\app\Controller\QuotesController.php, line 17]
+2013-02-22 11:30:54 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE
+Request URL: /cakequote/
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 17)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 17, Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\cak...', 17, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-22 11:31:05 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE in [C:\wamp\www\cakequote\app\Model\Quote.php, line 41]
+2013-02-22 11:31:05 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE
+Request URL: /cakequote/
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 41)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 41, Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\cak...', 41, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-22 11:31:28 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE, expecting T_FUNCTION in [C:\wamp\www\cakequote\app\Model\Quote.php, line 41]
+2013-02-22 11:31:28 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE, expecting T_FUNCTION
+Request URL: /cakequote/
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 41)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 41, Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\cak...', 41, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-22 11:33:11 Error: [MissingControllerException] Controller class RandomController could not be found.
+Exception Attributes: array (
+  'class' => 'RandomController',
+  'plugin' => NULL,
+)
+Request URL: /cakequote/random
+Stack Trace:
+#0 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-02-22 11:34:36 Error: [NotFoundException] Invalid quote
+Request URL: /cakequote/quotes/random
+Stack Trace:
+#0 C:\wamp\www\cakequote\app\Controller\QuotesController.php(22): QuotesController->view('Mieux vaut etre...')
+#1 [internal function]: QuotesController->random()
+#2 C:\wamp\www\cakequote\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(QuotesController), Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#4 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(QuotesController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-02-22 11:34:42 Error: [NotFoundException] Invalid quote
+Request URL: /cakequote/quotes/random
+Stack Trace:
+#0 C:\wamp\www\cakequote\app\Controller\QuotesController.php(22): QuotesController->view('La mode est fem...')
+#1 [internal function]: QuotesController->random()
+#2 C:\wamp\www\cakequote\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(QuotesController), Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#4 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(QuotesController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}

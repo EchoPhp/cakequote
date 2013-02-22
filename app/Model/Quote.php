@@ -37,4 +37,5 @@ class Quote extends AppModel {
         return $this->field('id',array('id'=>$quote_id, 'user_id'=>$user_id)) === $quote_id;
 
 	}
+
 }

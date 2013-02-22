@@ -24,7 +24,7 @@ class AppController extends Controller {
 		
 		$this->Auth->loginAction = array('controller'=>'users','action'=>'login','admin'=>false);
 		if(!isset($this->request->params['prefix'])){
-			$this->Auth->allow('index','view');
+			$this->Auth->allow('index','view','random');
 		}
 
 		if($this->Auth->loggedIn()){

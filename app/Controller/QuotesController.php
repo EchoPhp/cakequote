@@ -14,6 +14,15 @@ var $paginate = array(
         )
     );
 
+ function random() {
+                $random = $this->Quote->find('first',array(
+                        'order' => 'rand()',
+                        'limit' => 1
+                ));
+                $this->view($random['Quote']['id']);
+                $this->render('view');
+        }
+
 
 	public function isAuthorized($user){
 		if($this->action=='add'){

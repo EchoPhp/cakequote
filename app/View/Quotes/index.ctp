@@ -18,6 +18,7 @@
 		</div>
 	</div>	
 <?php endforeach; ?>
+
 	<p>
 	<?php
 	echo $this->Paginator->counter(array(
