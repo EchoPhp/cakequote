@@ -29,7 +29,7 @@
   margin-bottom:20px;
   // Links get text shadow
   a {
-    color: @grayLight;
+    color: #004fef;
     text-shadow: 0 -1px 0 rgba(0,0,0,.25);
   }
 
@@ -38,8 +38,6 @@
   h3 a:hover,
   .brand a:hover,
   ul .active > a {
-    background-color: #333;
-    background-color: rgba(255,255,255,.05);
     color: @white;
     text-decoration: none;
   }
@@ -55,7 +53,7 @@
     display: block;
     padding: 8px 20px 12px;
     margin-left: -20px; // negative indent to left-align the text down the page
-    color: @white;
+    color: #004fef;
     font-size: 20px;
     font-weight: 200;
     line-height: 1;
@@ -179,6 +177,7 @@
       border: 0;
     }
   }
+
   // Dropdowns within the .nav
   // a.menu:hover and li.open .menu for backwards compatibility
   a.menu:hover,
@@ -1015,4 +1014,16 @@ input[type=submit].btn {
       .box-shadow(0 1px 4px rgba(0,105,214,.25));
     }
   }
+}
+
+
+// FOOTER
+// -----------
+
+.footer{
+  display:block;
+  position:relative;
+  bottom:0px;
+  background-color:@grayLight;
+  text-align:center;
 }

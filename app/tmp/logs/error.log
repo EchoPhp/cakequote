@@ -1270,3 +1270,330 @@ Stack Trace:
 #4 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(QuotesController), Object(CakeRequest), Object(CakeResponse))
 #5 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #6 {main}
+2013-02-22 13:39:38 Error: Fatal Error (1): Call to undefined method AuthComponent::quote() in [C:\wamp\www\cakequote\app\Controller\QuotesController.php, line 111]
+2013-02-22 13:39:38 Error: [FatalErrorException] Call to undefined method AuthComponent::quote()
+Request URL: /cakequote/quotes/edit/5
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\wamp\www\cak...', 111)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\wamp\www\cak...', 111, Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\wamp\www\cak...', 111, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-22 13:40:29 Error: Fatal Error (1): Allowed memory size of 134217728 bytes exhausted (tried to allocate 42317267 bytes) in [C:\wamp\www\cakequote\lib\Cake\Utility\Debugger.php, line 614]
+2013-02-22 13:40:29 Error: [FatalErrorException] Allowed memory size of 134217728 bytes exhausted (tried to allocate 42317267 bytes)
+Request URL: /cakequote/quotes/edit/5
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Allowed memory ...', 'C:\wamp\www\cak...', 614)
+#1 [internal function]: ErrorHandler::handleError(1, 'Allowed memory ...', 'C:\wamp\www\cak...', 614, Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Allowed memory ...', 'C:\wamp\www\cak...', 614, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-22 13:43:28 Error: Fatal Error (1): Allowed memory size of 134217728 bytes exhausted (tried to allocate 62914560 bytes) in [C:\wamp\www\cakequote\lib\Cake\basics.php, line 116]
+2013-02-22 13:43:28 Error: [FatalErrorException] Allowed memory size of 134217728 bytes exhausted (tried to allocate 62914560 bytes)
+Request URL: /cakequote/quotes/edit/5
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Allowed memory ...', 'C:\wamp\www\cak...', 116)
+#1 [internal function]: ErrorHandler::handleError(1, 'Allowed memory ...', 'C:\wamp\www\cak...', 116, Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Allowed memory ...', 'C:\wamp\www\cak...', 116, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-22 13:47:14 Error: Fatal Error (4): syntax error, unexpected '(', expecting T_STRING or T_VARIABLE or '{' or '$' in [C:\wamp\www\cakequote\app\Controller\QuotesController.php, line 110]
+2013-02-22 13:47:14 Error: [FatalErrorException] syntax error, unexpected '(', expecting T_STRING or T_VARIABLE or '{' or '$'
+Request URL: /cakequote/quotes/edit/5
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 110)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 110, Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\cak...', 110, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-22 13:49:50 Error: [NotFoundException] Invalid quote
+Request URL: /cakequote/quotes/edit/2
+Stack Trace:
+#0 [internal function]: QuotesController->edit('2')
+#1 C:\wamp\www\cakequote\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(QuotesController), Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#3 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(QuotesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-02-22 13:50:06 Error: [NotFoundException] Invalid quote
+Request URL: /cakequote/quotes/edit/2
+Stack Trace:
+#0 [internal function]: QuotesController->edit('2')
+#1 C:\wamp\www\cakequote\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(QuotesController), Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#3 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(QuotesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-02-22 13:51:23 Error: [NotFoundException] Invalid quote
+Request URL: /cakequote/quotes/edit/2
+Stack Trace:
+#0 [internal function]: QuotesController->edit('2')
+#1 C:\wamp\www\cakequote\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(QuotesController), Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#3 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(QuotesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-02-22 13:51:50 Error: [NotFoundException] Invalid quote
+Request URL: /cakequote/quotes/edit/2
+Stack Trace:
+#0 [internal function]: QuotesController->edit('2')
+#1 C:\wamp\www\cakequote\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(QuotesController), Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#3 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(QuotesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-02-22 13:52:04 Error: [NotFoundException] Invalid quote
+Request URL: /cakequote/quotes/edit/2
+Stack Trace:
+#0 [internal function]: QuotesController->edit('2')
+#1 C:\wamp\www\cakequote\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(QuotesController), Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#3 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(QuotesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-02-22 13:53:20 Error: Fatal Error (1): Call to undefined method AuthComponent::quote() in [C:\wamp\www\cakequote\app\Controller\QuotesController.php, line 110]
+2013-02-22 13:53:20 Error: [FatalErrorException] Call to undefined method AuthComponent::quote()
+Request URL: /cakequote/quotes/edit/1
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\wamp\www\cak...', 110)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\wamp\www\cak...', 110, Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\wamp\www\cak...', 110, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-22 13:55:24 Error: Fatal Error (4): syntax error, unexpected ')' in [C:\wamp\www\cakequote\app\Controller\QuotesController.php, line 110]
+2013-02-22 13:55:24 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /cakequote/quotes/edit/3
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 110)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 110, Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\cak...', 110, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-22 14:05:09 Error: Fatal Error (4): syntax error, unexpected T_DOUBLE_ARROW in [C:\wamp\www\cakequote\app\Controller\QuotesController.php, line 111]
+2013-02-22 14:05:09 Error: [FatalErrorException] syntax error, unexpected T_DOUBLE_ARROW
+Request URL: /cakequote/quotes/edit/7
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 111)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 111, Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\cak...', 111, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-22 14:05:33 Error: Fatal Error (4): syntax error, unexpected T_DOUBLE_ARROW in [C:\wamp\www\cakequote\app\Controller\QuotesController.php, line 111]
+2013-02-22 14:05:33 Error: [FatalErrorException] syntax error, unexpected T_DOUBLE_ARROW
+Request URL: /cakequote/quotes/edit/7
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 111)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 111, Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\cak...', 111, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-22 14:17:15 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /cakequote/quotes/delete/15
+Stack Trace:
+#0 C:\wamp\www\cakequote\app\Controller\QuotesController.php(158): CakeRequest->onlyAllow('post', 'delete')
+#1 [internal function]: QuotesController->delete('15')
+#2 C:\wamp\www\cakequote\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(QuotesController), Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#4 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(QuotesController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-02-22 14:21:10 Error: [NotFoundException] Invalid group
+Request URL: /cakequote/admin/groups/view
+Stack Trace:
+#0 [internal function]: GroupsController->admin_view()
+#1 C:\wamp\www\cakequote\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(GroupsController), Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#3 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(GroupsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-02-22 20:58:39 Error: [MissingControllerException] Controller class GroupController could not be found.
+Exception Attributes: array (
+  'class' => 'GroupController',
+  'plugin' => NULL,
+)
+Request URL: /cakequote/group
+Stack Trace:
+#0 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-02-22 20:58:41 Error: [MissingActionException] Action GroupsController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'GroupsController',
+  'action' => 'index',
+)
+Request URL: /cakequote/groups
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(GroupsController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-02-23 11:03:04 Error: Fatal Error (4): syntax error, unexpected '<', expecting ')' in [C:\wamp\www\cakequote\app\View\Layouts\default.ctp, line 21]
+2013-02-23 11:03:04 Error: [FatalErrorException] syntax error, unexpected '<', expecting ')'
+Request URL: /cakequote/
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 21)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 21, Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\cak...', 21, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-23 11:03:21 Error: Fatal Error (4): syntax error, unexpected ',', expecting ')' in [C:\wamp\www\cakequote\app\View\Layouts\default.ctp, line 21]
+2013-02-23 11:03:21 Error: [FatalErrorException] syntax error, unexpected ',', expecting ')'
+Request URL: /cakequote/
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 21)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 21, Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\cak...', 21, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-23 11:04:19 Error: Fatal Error (4): syntax error, unexpected T_STRING in [C:\wamp\www\cakequote\app\View\Layouts\default.ctp, line 21]
+2013-02-23 11:04:19 Error: [FatalErrorException] syntax error, unexpected T_STRING
+Request URL: /cakequote/
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 21)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 21, Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\cak...', 21, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-23 11:04:38 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [C:\wamp\www\cakequote\app\View\Layouts\default.ctp, line 21]
+2013-02-23 11:04:38 Error: [FatalErrorException] syntax error, unexpected ';', expecting ')'
+Request URL: /cakequote/
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 21)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 21, Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\cak...', 21, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-23 11:05:03 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [C:\wamp\www\cakequote\app\View\Layouts\default.ctp, line 21]
+2013-02-23 11:05:03 Error: [FatalErrorException] syntax error, unexpected ';', expecting ')'
+Request URL: /cakequote/
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 21)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 21, Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\cak...', 21, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-23 11:05:11 Error: Fatal Error (4): syntax error, unexpected ',', expecting ')' in [C:\wamp\www\cakequote\app\View\Layouts\default.ctp, line 21]
+2013-02-23 11:05:11 Error: [FatalErrorException] syntax error, unexpected ',', expecting ')'
+Request URL: /cakequote/
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 21)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 21, Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\cak...', 21, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-23 11:24:29 Error: [MissingActionException] Action QuotesController::logo_inutile.png() could not be found.
+Exception Attributes: array (
+  'controller' => 'QuotesController',
+  'action' => 'logo_inutile.png',
+)
+Request URL: /cakequote/quotes/logo_inutile.png
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(QuotesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-02-23 11:24:44 Error: [MissingActionException] Action UsersController::logo_inutile.png() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'logo_inutile.png',
+)
+Request URL: /cakequote/users/logo_inutile.png
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-02-23 12:00:22 Error: Fatal Error (4): syntax error, unexpected $end in [C:\wamp\www\cakequote\app\View\Layouts\default.ctp, line 66]
+2013-02-23 12:00:22 Error: [FatalErrorException] syntax error, unexpected $end
+Request URL: /cakequote/
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 66)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 66, Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\cak...', 66, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-23 12:05:13 Error: [MissingActionException] Action UsersController::admin_logout() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'admin_logout',
+)
+Request URL: /cakequote/admin/users/logout
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-02-23 12:23:05 Error: [NotFoundException] Invalid user
+Request URL: /cakequote/users/view
+Stack Trace:
+#0 [internal function]: UsersController->view()
+#1 C:\wamp\www\cakequote\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#3 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-02-23 12:23:43 Error: [NotFoundException] Invalid user
+Request URL: /cakequote/users/view
+Stack Trace:
+#0 [internal function]: UsersController->view()
+#1 C:\wamp\www\cakequote\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#3 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-02-23 12:23:45 Error: [MissingActionException] Action UsersController::5() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => '5',
+)
+Request URL: /cakequote/users/5
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-02-23 12:24:19 Error: [MissingActionException] Action UsersController::5() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => '5',
+)
+Request URL: /cakequote/users/5
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cakequote\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\cakequote\app\webroot\index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-02-23 12:29:01 Error: Fatal Error (1): Call to undefined method View::sort() in [C:\wamp\www\cakequote\app\View\Users\view.ctp, line 6]
+2013-02-23 12:29:01 Error: [FatalErrorException] Call to undefined method View::sort()
+Request URL: /cakequote/users/view/5
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\wamp\www\cak...', 6)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\wamp\www\cak...', 6, Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\wamp\www\cak...', 6, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-23 12:33:09 Error: Fatal Error (4): syntax error, unexpected $end in [C:\wamp\www\cakequote\app\View\Users\view.ctp, line 118]
+2013-02-23 12:33:09 Error: [FatalErrorException] syntax error, unexpected $end
+Request URL: /cakequote/users/view/5
+Stack Trace:
+#0 C:\wamp\www\cakequote\lib\Cake\Error\ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 118)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 118, Array)
+#2 C:\wamp\www\cakequote\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\cak...', 118, Array)
+#3 C:\wamp\www\cakequote\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

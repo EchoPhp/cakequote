@@ -18,24 +18,28 @@
           <div class="topbar-inner"> 
             <div class="container"> 
                <?php if(AuthComponent::user('id')): ?>
-                  <h3><?php echo $this->Html->link(AuthComponent::user('username'), '/'); ?></h3> 
+                  <h3><?php echo $this->Html->link('Mots inutiles - '.AuthComponent::user('username'), '/'); ?></h3> 
                <?php else: ?>  
-                  <h3><?php echo $this->Html->link('cakequote', '/'); ?></h3> 
+                  <h3><?php echo $this->Html->link('Mots inutiles', '/'); ?></h3> 
                <?php endif; ?>
               <ul class="nav">
                 <?php if(AuthComponent::user('id')): ?>
-                        <?php if(AuthComponent::user('group_id')==1): ?>
-                        <li><?php echo $this->Html->link(__('Espace admin'), array('controller' => 'admin', 'action' => 'users')); ?></li>
-                        <?php endif; ?>
-                        <li><?php echo $this->Html->link(__('Se déconnecter'), array('controller' => 'users', 'action' => 'logout')); ?></li>
-                        <li><?php echo $this->Html->link(__("Ajouter une quote"), array('controller' => 'quotes', 'action' => 'add')); ?></li>
+                        <li><?php echo $this->Html->link(__("Ajouter un mot"), array('controller' => 'quotes', 'action' => 'add')); ?></li>
+                        <li><?php echo $this->Html->link(__("Mon profil"), array('controller' => 'users', 'action' => 'view/'.AuthComponent::user('id'))); ?></li>
                         <li><?php echo $this->Html->link(__("Voir les utilisateurs"), array('controller' => 'users', 'action' => 'index')); ?></li>
-                <?php else: ?>   
-                        <li><?php echo $this->Html->link(__('Se connecter'), array('controller' => 'users', 'action' => 'login')); ?></li>
-                        <li><?php echo $this->Html->link("S'inscrire",array('action'=>'add','controller'=>'users')); ?></li>
                 <?php endif; ?>
-                        <li><?php echo $this->Html->link(__('Quote au hasard'), array('controller' => 'quotes', 'action' => 'random')); ?></li>
-
+                        <li><?php echo $this->Html->link(__('Mot au hasard'), array('controller' => 'quotes', 'action' => 'random')); ?></li>
+              </ul>
+              <ul class="nav secondary-nav">
+                <?php if(AuthComponent::user('id')): ?>
+                    <li><?php echo $this->Html->link(__('Se déconnecter'), array('controller' => 'users', 'action' => 'logout')); ?></li>
+                    <?php if(AuthComponent::user('group_id')==1): ?>
+                        <li><?php echo $this->Html->link(__('Espace admin'), array('controller' => 'admin', 'action' => 'quotes')); ?></li>
+                      <?php endif; ?>
+                <?php else: ?> 
+                    <li><?php echo $this->Html->link(__('Se connecter'), array('controller' => 'users', 'action' => 'login')); ?></li>
+                    <li><?php echo $this->Html->link("S'inscrire",array('action'=>'add','controller'=>'users')); ?></li>
+                    <?php endif; ?>
               </ul>
 
 
@@ -50,7 +54,7 @@
           <?php echo $content_for_layout; ?>
         </div> 
 
-       <div id="footer">
+       <div class="footer ">
           coded with love
         </div>
         

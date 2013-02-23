@@ -49,11 +49,6 @@
 			<td><?php echo $user['group_id']; ?></td>
 			<td><?php echo $user['created']; ?></td>
 			<td><?php echo $user['updated']; ?></td>
-			<td class="actions">
-				<?php echo $this->Html->link(__('View'), array('controller' => 'users', 'action' => 'view', $user['id'])); ?>
-				<?php echo $this->Html->link(__('Edit'), array('controller' => 'users', 'action' => 'edit', $user['id'])); ?>
-				<?php echo $this->Form->postLink(__('Delete'), array('controller' => 'users', 'action' => 'delete', $user['id']), null, __('Are you sure you want to delete # %s?', $user['id'])); ?>
-			</td>
 		</tr>
 	<?php endforeach; ?>
 	</table>

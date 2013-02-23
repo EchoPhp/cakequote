@@ -106,11 +106,18 @@ var $paginate = array(
  * @return void
  */
 	public function edit($id = null) {
-		$user_id = $this->Auth->user('id_user');
-		if(!$user_id){
+		$user_id = $this->Auth->user('id');
+		$quote_id = $this->request->params['pass'][0];
+		$user_gp = $this->Auth->user('group_id');
+		if(!$user_id || !$this->Quote->isOwnedBy($quote_id,$user_id) ){
 			$this->redirect('/');
+
 			die(); 
 		}
+		
+
+
+		
 
 		if (!$this->Quote->exists($id)) {
 			throw new NotFoundException(__('Invalid quote'));
@@ -139,7 +146,7 @@ var $paginate = array(
  * @return void
  */
 	public function delete($id = null) {
-		$user_id = $this->Auth->user('id_user');
+		$user_id = $this->Auth->user('id');
 		if(!$user_id){
 			$this->redirect('/');
 

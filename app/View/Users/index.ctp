@@ -12,10 +12,6 @@
 
 		<td class="actions">
 			<?php echo $this->Html->link(__('Voir le profil'), array('action' => 'view', $user['User']['id'])); ?>
-			<?php if(AuthComponent::user('id')== $user['User']['id'] || AuthComponent::user('group_id')==1): ?>
-                        - <?php echo $this->Html->link(__('Editer le profil'), array('action' => 'edit', $user['User']['id'])); ?>
-						- <?php echo $this->Form->postLink(__("Supprimer l'utilisateur"), array('action' => 'delete', $user['User']['id']), null, __('Are you sure you want to delete # %s?', $user['User']['id'])); ?>
-            <?php endif; ?>
 			
 			
 		</td>
@@ -28,9 +24,9 @@
 	?>	</p>
 	<div class="paging">
 	<?php
-		echo $this->Paginator->prev('< ' . __('page précédente '), array(), null, array('class' => 'prev disabled'));
+		echo $this->Paginator->prev('< ' . __('précédent '), array(), null, array('class' => 'prev disabled'));
 		echo $this->Paginator->numbers(array('separator' => '|'));
-		echo $this->Paginator->next(__(' page suivante') . ' >', array(), null, array('class' => 'next disabled'));
+		echo $this->Paginator->next(__(' suivant') . ' >', array(), null, array('class' => 'next disabled'));
 	?>
 	</div>
 </div>
